@@ -76,8 +76,6 @@ body {
     display: block;
     align-items: center;
     letter-spacing: 0.04em;
-    margin-left: auto;
-    margin-right: auto;
     min-width: 169px;
     min-height: 56px;
     border-style: none;
@@ -351,7 +349,11 @@ img {
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
+
     display: block;
+    margin-left: auto;
+    margin-right: auto;
+
     line-height: 1.50;
     min-width: 169px;
     border-radius: 4px;
@@ -365,8 +367,6 @@ img {
 
 
 }
-
-
 
 
 
@@ -657,7 +657,9 @@ img {
     width: 264px;
 }
 
-.footer-socials-container {}
+.footer-socials-container {
+    margin-right: 80px;
+}
 
 .footer-socials-text {
     font-weight: 500;
@@ -698,6 +700,27 @@ img {
 .footer-socials-icon {
     fill: var(--color-cloud);
 }
+
+/* FOOTER FORM STYLES */
+
+
+
+/* .footer-form-container {}
+
+.footer-input-help {}
+
+.footer-form-title {
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0.02em;
+    margin-bottom: 16px;
+    color: #FFFFFF;
+}
+
+.footer-submit-btn {}
+
+.footer-submit-icon {} */
+
 
 /**
   |============================
@@ -789,7 +812,91 @@ img {
 
 }
 
+.modal-title {
+    display: block;
 
+    margin-bottom: 16px;
+
+    font-size: 16px;
+    text-align: center;
+}
+
+.modal-form-label {
+    display: block;
+    margin-bottom: 4px;
+
+    font-size: 12px;
+}
+
+.modal-input-wrapper {
+    position: relative;
+    margin-bottom: 8px;
+
+
+}
+
+.modal-form-input {
+    width: 100%;
+    height: 40px;
+    padding: 0 38px;
+
+    border: 1px solid rgba(46, 47, 66, 0.4);
+    border-radius: 4px;
+    outline: 1px solid transparent;
+    outline-offset: -1px;
+
+    transition: outline-color var(--anim-fast) var(--cubic-bezier);
+}
+
+.modal-form-input:focus {
+    outline-color: var(--color-iris);
+}
+
+.modal-icon-contacts {
+    position: absolute;
+    top: 50%;
+    left: 0;
+
+    transform: translateY(-50%) translateX(16px);
+
+    transition: fill var(--anim-fast) var(--cubic-bezier);
+    pointer-events: none;
+}
+
+.modal-form-input:focus+.modal-icon-contacts {
+    fill: var(--color-iris);
+}
+
+
+.modal-form-texterea {
+    display: block;
+}
+
+
+.modal-submit-btn {
+    color: var(--color-white);
+    background-color: var(--color-iris);
+    cursor: pointer;
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+    line-height: 1.50;
+    min-width: 169px;
+    border-radius: 4px;
+
+    transition: background-color var(--anim-fast) var(--cubic-bezier);
+}
+
+.modal-submit-btn:focus,
+.modal-submit-btn:hover {
+    background-color: var(--color-ocean);
+}
 
 
 /**
