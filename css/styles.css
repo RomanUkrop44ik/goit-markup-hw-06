@@ -818,10 +818,12 @@ img {
 }
 
 .modal {
-    width: 400px;
-    min-height: 550px;
+    width: 408px;
+    min-height: 584px;
     padding: 24px;
     opacity: 1;
+
+    padding-top: 72px;
 
     position: absolute;
     top: 50%;
@@ -843,8 +845,8 @@ img {
 
 .modal-btn-exit {
     position: absolute;
-    top: -12px;
-    right: -12px;
+    top: 24px;
+    right: 24px;
 
 
     width: 24px;
@@ -890,6 +892,7 @@ img {
     margin-bottom: 4px;
 
     font-size: 12px;
+    line-height: 1.17;
 }
 
 .modal-input-wrapper {
